@@ -20,7 +20,7 @@
 
     <dependencies>
 
-        <!--@data gittame-->
+        <!--@data-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

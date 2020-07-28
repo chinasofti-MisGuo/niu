@@ -3,6 +3,7 @@ package com.cristina.controller;
 import com.cristina.model.entity.User;
 import com.cristina.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Description;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +25,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @Description("根据用户id查询用户")
     @GetMapping("/api/{id}")
     public User getUser(@PathVariable("id") Long id) {
         return userService.getUserBy(id);
